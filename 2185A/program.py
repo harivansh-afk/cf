@@ -1,6 +1,13 @@
+'''
+- always have things MAKE SENSE TO YOU
+- donot care about what the problem is TRYING to say
+think more about what the problem IS saying
+'''
+
+import random
+
 def perfectroot(n:int):
-    for i in range(1, n+1):
-        print(i**2, end=' ')
+    print(random.randint(0,10**9), end=' ')
     print()
 
 
