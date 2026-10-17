@@ -1,17 +1,21 @@
 def kiakio(n, arr):
-    hmap = {}
-    for i in arr:
-        sum = int()
+    for _ in range(10):
+        for i in range(len(arr)):
+            tot = int()
+            for j in str(arr[i]):
+                tot += int(j)**2
 
-        for j in str(i):
-            sum += int(j)**2
+            arr[i] = tot
 
 
-        print(sum)
+    seen = {}
+    pairs = 0
 
-    print()
-                    
+    for x in arr:
+        pairs += seen.get(x,0)
+        seen[x] = seen.get(x,0) + 1
 
+    print(pairs)
 
 t = int(input())
 
