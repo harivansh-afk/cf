@@ -1,9 +1,12 @@
 def distinct(n, arr):
-    a = len(set(arr))
-    if n%2 == 0:
-        print(a)
+    u = len(set(arr))
+    d = len(arr)-u
+
+    if d%2 == 0:
+        print(u)
     else:
-        print(a-1)
+        print(u-1)
+
 
 t = int(input())
 
