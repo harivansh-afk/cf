@@ -1,11 +1,11 @@
 def minus(n,arr) -> None:
-    a,b,c = int(), int(), int()
+    a = b = c = 0
     for i in arr:
         if i % 4 == 0:
             a += 1
         elif i % 4 == 2:
             b += 1
-        elif i == 1:
+        else:
             c += 1
             
 
