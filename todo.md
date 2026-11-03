@@ -3,4 +3,4 @@
 - [ ] common graph search
 
 - [ ] class design
-- [ ] distributed hash design
+- [ ] distributed system design
