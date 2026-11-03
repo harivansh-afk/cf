@@ -1,12 +1,18 @@
 def strips(n,k,s) -> None:
-    arr = [] 
-    for i in range(n-k+1):
-        arr.append(s[i:i+k])
+    count = s[:k].count('W')
+    best = count
 
-    best = min(arr, key=lambda b:b.count('W'))
+    for i in range(k,n):
+        if s[i-k] == 'W':
+            count -= 1
 
-    print(best.count('W'))
+        if s[i] == 'W':
+            count += 1
 
+        if count < best:
+            best = count
+
+    print(best)
 
 t = int(input())
 
